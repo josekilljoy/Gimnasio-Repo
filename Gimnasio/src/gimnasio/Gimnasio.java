@@ -25,6 +25,8 @@ public class Gimnasio extends Application {
         
         stage.setScene(scene);
         stage.show();
+        System.out.println("hola jose, como estas");
+        System.out.println("hola santiededae, como estas");
     }
 
     /**
