@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package gimnasio;
 
 import javafx.application.Application;
@@ -18,7 +14,8 @@ import javafx.stage.Stage;
 public class Gimnasio extends Application {
     
     @Override
-    public void start(Stage stage) throws Exception {
+    public void start(Stage stage) throws Exception 
+    {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         
         Scene scene = new Scene(root);
@@ -26,7 +23,6 @@ public class Gimnasio extends Application {
         stage.setScene(scene);
         stage.show();
         System.out.println("hola jose, como estas");
-        System.out.println("hola santiededae, como estas");
     }
 
     /**
