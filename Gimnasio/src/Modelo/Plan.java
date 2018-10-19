@@ -6,11 +6,11 @@ public class Plan
 {
     //------------------------------------------------------------------------------------------------------------ATRIBUTOS
     private int codigo;
-    private char nombre;
+    private String nombre;
     private float horasSemanales;
-    private char dias;
+    private String dias;
     private float abono;
-    private char dedicacion;
+    private String dedicacion;
     private ArrayList ejercicios = new ArrayList<Ejercicios>();
     
     
@@ -26,7 +26,7 @@ public class Plan
     
     
     //------------------------------------------------------------------------------------------------------------CONSTRUCTOR
-    public Plan(int codigo, char nombre, float horasSemanales, char dias, float abono, char dedicacion) 
+    public Plan(int codigo, String nombre, float horasSemanales, String dias, float abono, String dedicacion) 
     {
         this.codigo = codigo;
         this.nombre = nombre;
@@ -46,12 +46,12 @@ public class Plan
         this.codigo = codigo;
     }
     //------------------------------------------------------------------------------------------------------------GET NOMBRE
-    public char getNombre() 
+    public String getNombre() 
     {
         return nombre;
     }
     //------------------------------------------------------------------------------------------------------------SET NOMBRE
-    public void setNombre(char nombre) 
+    public void setNombre(String nombre) 
     {
         this.nombre = nombre;
     }
@@ -66,12 +66,12 @@ public class Plan
         this.horasSemanales = horasSemanales;
     }
     //------------------------------------------------------------------------------------------------------------GET DIAS
-    public char getDias() 
+    public String getDias() 
     {
         return dias;
     }
     //------------------------------------------------------------------------------------------------------------SET DIAS
-    public void setDias(char dias) 
+    public void setDias(String dias) 
     {
         this.dias = dias;
     }
@@ -86,12 +86,12 @@ public class Plan
         this.abono = abono;
     }
     //------------------------------------------------------------------------------------------------------------GET DEDICACION
-    public char getDedicacion() 
+    public String getDedicacion() 
     {
         return dedicacion;
     }
     //------------------------------------------------------------------------------------------------------------SET DEDICACION
-    public void setDedicacion(char dedicacion) 
+    public void setDedicacion(String dedicacion) 
     {
         this.dedicacion = dedicacion;
     }

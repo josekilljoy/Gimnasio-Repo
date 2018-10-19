@@ -4,12 +4,12 @@ public class Persona
 {
     //------------------------------------------------------------------------------------------------------------ATRIBUTOS
     private int codigo;
-    private char nombre;
-    private char apellido;
+    private String nombre;
+    private String apellido;
     private int dni;
-    private char direccion;
+    private String direccion;
     //------------------------------------------------------------------------------------------------------------CONSTRUCTOR
-    public Persona(int codigo, char nombre, char apellido, int dni, char direccion) 
+    public Persona(int codigo, String nombre, String apellido, int dni, String direccion) 
     {
         this.codigo = codigo;
         this.nombre = nombre;
@@ -28,22 +28,22 @@ public class Persona
         this.codigo = codigo;
     }
     //------------------------------------------------------------------------------------------------------------GET NOMBRE
-    public char getNombre() 
+    public String getNombre() 
     {
         return nombre;
     }
     //------------------------------------------------------------------------------------------------------------SET NOMBRE
-    public void setNombre(char nombre) 
+    public void setNombre(String nombre) 
     {
         this.nombre = nombre;
     }
     //------------------------------------------------------------------------------------------------------------GET APELLIDO
-    public char getApellido() 
+    public String getApellido() 
     {
         return apellido;
     }
     //------------------------------------------------------------------------------------------------------------SET APELLIDO
-    public void setApellido(char apellido) 
+    public void setApellido(String apellido) 
     {
         this.apellido = apellido;
     }
@@ -58,12 +58,12 @@ public class Persona
         this.dni = dni;
     }
     //------------------------------------------------------------------------------------------------------------GET DIRECCION
-    public char getDireccion() 
+    public String getDireccion() 
     {
         return direccion;
     }
     //------------------------------------------------------------------------------------------------------------SET DIRECCION
-    public void setDireccion(char direccion) 
+    public void setDireccion(String direccion) 
     {
         this.direccion = direccion;
     }

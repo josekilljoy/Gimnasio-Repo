@@ -4,10 +4,10 @@ public class Inscripcion
 {
     //------------------------------------------------------------------------------------------------------------ATRIBUTOS
     private float monto;
-    private char fecha;
+    private String fecha;
     private Cliente cliente;
     //------------------------------------------------------------------------------------------------------------CONSTRUCTOR
-    public Inscripcion(float monto, char fecha, Cliente cliente) 
+    public Inscripcion(float monto, String fecha, Cliente cliente) 
     {
         this.monto = monto;
         this.fecha = fecha;
@@ -24,12 +24,12 @@ public class Inscripcion
         this.monto = monto;
     }
     //------------------------------------------------------------------------------------------------------------GET FECHA
-    public char getFecha() 
+    public String getFecha() 
     {
         return fecha;
     }
     //------------------------------------------------------------------------------------------------------------SET FECHA
-    public void setFecha(char fecha) 
+    public void setFecha(String fecha) 
     {
         this.fecha = fecha;
     }

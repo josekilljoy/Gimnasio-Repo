@@ -4,7 +4,7 @@ public class Ejercicios
 {
     //------------------------------------------------------------------------------------------------------------ATRIBUTOS
     private int codigo;
-    private char nombre;
+    private String nombre;
      
     
     
@@ -16,7 +16,7 @@ public class Ejercicios
     
     
     //------------------------------------------------------------------------------------------------------------CONSTRUCTOR
-    public Ejercicios(int codigo, char nombre) 
+    public Ejercicios(int codigo, String nombre) 
     {
         this.codigo = codigo;
         this.nombre = nombre;
@@ -32,12 +32,12 @@ public class Ejercicios
         this.codigo = codigo;
     }
     //------------------------------------------------------------------------------------------------------------GET NOMBRE
-    public char getNombre() 
+    public String getNombre() 
     {
         return nombre;
     }
     //------------------------------------------------------------------------------------------------------------SET NOMBRE
-    public void setNombre(char nombre) 
+    public void setNombre(String nombre) 
     {
         this.nombre = nombre;
     }

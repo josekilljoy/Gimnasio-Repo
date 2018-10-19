@@ -19,7 +19,7 @@ public class Profesor extends Persona
     
     
     //------------------------------------------------------------------------------------------------------------CONSTRUCTOR
-    public Profesor(int codigo, char nombre, char apellido, int dni, char direccion, boolean sustituto) 
+    public Profesor(int codigo, String nombre, String apellido, int dni, String direccion, boolean sustituto) 
     {
         super(codigo, nombre, apellido, dni, direccion);
         this.sustituto = sustituto;

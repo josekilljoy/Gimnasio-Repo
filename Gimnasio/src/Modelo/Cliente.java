@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Cliente extends Persona
 {
     //------------------------------------------------------------------------------------------------------------ATRIBUTOS
-    private char categoria;
+    private String categoria;
     private int tel;
     private ArrayList telEmer = new ArrayList();
     
@@ -22,19 +22,19 @@ public class Cliente extends Persona
     
 
     //------------------------------------------------------------------------------------------------------------CONSTRUCTOR
-    public Cliente(int codigo, char nombre, char apellido, int dni, char direccion, char categoria, int tel)
+    public Cliente(int codigo, String nombre, String apellido, int dni, String direccion, String categoria, int tel)
     {
         super(codigo, nombre, apellido, dni, direccion);
         this.categoria = categoria;
         this.tel = tel;   
     }
     //------------------------------------------------------------------------------------------------------------GET CATEGORIA
-    public char getCategoria() 
+    public String getCategoria() 
     {
         return categoria;
     }
     //------------------------------------------------------------------------------------------------------------SET CATEGORIA
-    public void setCategoria(char categoria) 
+    public void setCategoria(String categoria) 
     {  
         this.categoria = categoria;
     }
