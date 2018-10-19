@@ -5,11 +5,11 @@ public class Cuota
     //------------------------------------------------------------------------------------------------------------ATRIBUTOS
     private float monto;
     private float descuento;
-    private char fecha;
+    private String fecha;
     private Cliente cliente;
     private Plan plan;
     //------------------------------------------------------------------------------------------------------------CONSTRUCTOR
-    public Cuota(float monto, float descuento, char fecha, Cliente cliente, Plan plan) 
+    public Cuota(float monto, float descuento, String fecha, Cliente cliente, Plan plan) 
     {
         this.monto = monto;
         this.descuento = descuento;
@@ -38,12 +38,12 @@ public class Cuota
         this.descuento = descuento;
     }
     //------------------------------------------------------------------------------------------------------------GET FECHA
-    public char getFecha()  
+    public String getFecha()  
     {
         return fecha;
     }
     //------------------------------------------------------------------------------------------------------------SET FECHA
-    public void setFecha(char fecha) 
+    public void setFecha(String fecha) 
     {
         this.fecha = fecha;
     }

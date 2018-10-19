@@ -4,12 +4,12 @@ package Modelo;
 public class Asistencia 
 {
     //------------------------------------------------------------------------------------------------------------ATRIBUTOS
-    private char fecha;
-    private char hora;
+    private String fecha;
+    private String hora;
     private Cliente cliente;
     private Plan plan;
     //------------------------------------------------------------------------------------------------------------CONSTRUCTOR
-    public Asistencia(char fecha, char hora, Cliente cliente, Plan plan) 
+    public Asistencia(String fecha, String hora, Cliente cliente, Plan plan) 
     {
         this.fecha = fecha;
         this.hora = hora;
@@ -17,22 +17,22 @@ public class Asistencia
         this.plan = plan;
     }
     //------------------------------------------------------------------------------------------------------------GET FECHA
-    public char getFecha() 
+    public String getFecha() 
     {
         return fecha;
     }
     //------------------------------------------------------------------------------------------------------------SET FECHA
-    public void setFecha(char fecha) 
+    public void setFecha(String fecha) 
     {
         this.fecha = fecha;
     }
     //------------------------------------------------------------------------------------------------------------GET HORA
-    public char getHora() 
+    public String getHora() 
     {
         return hora;
     }
     //------------------------------------------------------------------------------------------------------------SET HORA
-    public void setHora(char hora) 
+    public void setHora(String hora) 
     {
         this.hora = hora;
     }

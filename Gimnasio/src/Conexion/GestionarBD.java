@@ -40,4 +40,27 @@ public class GestionarBD
     //-----------------------------------------------------------------------------------------------------------\
     //------------------------------------------------------------------------------------------------------------COMUNICACION BASE DE DATOS
     //-----------------------------------------------------------------------------------------------------------/
+    public Vector getClientes(String consulta)
+    {
+        Vector<Cliente> vector = new Vector();
+        try
+        {
+            conexion.setConnection(conexion.getConnection());
+            setStat(conexion.getConnection().createStatement());
+            setRset(getStat().executeQuery(consulta));
+            while(getRset().next())
+            {
+                Cliente cliente = new Cliente(getRset().getInt("pe_cod"), getRset().getString("pe_nombre"), getRset().getString("pe_apellido"), getRset().getInt("pe_dni"), getRset().getString("pe_direccion"), getRset().getString("cl_categoria"), getRset().getInt("cl_tel"));
+                vector.add(cliente);
+            }
+            rset.close();
+            stat.close();
+            conexion.getConnection().close();
+        }
+        catch(SQLException e)
+        {
+            System.out.println(e.getMessage());
+        }
+        return vector;
+    }
 }
